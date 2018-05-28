@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz: Ice Cream(3-6)</title>
+    <style>
+        code {
+            color: #c7254e;
+            background-color: #f9f2f4;
+            border-radius: 4px;
+            direction: ltr;
+            unicode-bidi: bidi-override;
+        }
+        
+        blockquote {
+            margin: 20px 0;
+            padding: 10px 20px;
+            border-left: 5px solid #dbe2e8;
+        }
+        
+        span {
+            font-family: "Lucida Console", Monaco, Courier, monospace;
+            display: block;
+            padding: 9.5px;
+            font-size: 13px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Directions:</h1>
+    <p>Ice cream is one of the most versatile desserts on the planet because it can be done up so many different ways. Using logical operators, write a series of complex logical expressions that prints <strong>only if</strong> the following conditions are
+        <strong>true</strong>:</p>
+    <ul>
+        <li>if <code>flavor</code> is set to <code>vanilla</code> or <code>chocolate</code> and</li>
+        <li>if <code>vessel</code> is set to <code>cone</code> or <code>bowl</code> and</li>
+        <li>if <code>toppings</code> is set to <code>sprinkles</code> or <code>peanuts</code></li>
+    </ul>
+
+    <p>If the above conditions are <code>true</code>, then print out:</p>
+
+
+    <span>I'd like two scoops of __________ ice cream in a __________ with __________.</span>
+
+    <p>Fill in the blanks with the flavor of the ice cream, vessel, and toppings. For example,</p>
+
+    <span>I'd like two scoops of vanilla ice cream in a cone with peanuts.</span>
+
+    <blockquote>TIP: Make sure to test your code with different values. For example, If <code>flavor</code> equals <code>"chocolate"</code>, <code>vessel</code> equals <code>"cone"</code> and <code>toppings</code> equals <code>"sprinkles"</code>, then <code>"I'd like two scoops of chocolate ice cream in a cone with sprinkles."</code>        should be printed to the console.</blockquote>
+
+    <div style="text-align: center">
+        <span style="text-transform: uppercase; font-weight: bold">Solution is in console (<em>Ctrl+Shift+I</em> to open)</span></div>
+</body>
+
+<script>
+    /*
+     * Programming Quiz: Ice Cream (3-6)
+     *
+     * Write a single if statement that logs out the message:
+     * 
+     * "I'd like two scoops of __________ ice cream in a __________ with __________."
+     * 
+     * ...only if:
+     *   - flavor is "vanilla" or "chocolate"
+     *   - vessel is "cone" or "bowl"
+     *   - toppings is "sprinkles" or "peanuts"
+     *
+     * We're only testing the if statement and your boolean operators. 
+     * It's okay if the output string doesn't match exactly.
+     */
+
+    // change the values of `flavor`, `vessel`, and `toppings` to test your code
+    var flavor = "chocolate"; //default flavor == strawberry
+    var vessel = "bowl"; //default vessel = cone
+    var toppings = "peanuts"; //default topping = cookies
+
+    // Add your code here
+    if ((flavor === "vanilla" || flavor === "chocolate") && (vessel === "cone" || vessel === "bowl") && (toppings === "sprinkles" || toppings === "peanuts")) {
+        console.log("I'd like two scoops of " + flavor + " ice cream in a " + vessel + " with " + toppings + ".")
+            // my additions. Will actually tell you what you're missing out.
+    } else if ((vessel === "cone" || vessel === "bowl") && (toppings === "sprinkles" || toppings === "peanuts")) {
+        console.log("Please try ordering again using either vanilla or chocolate flavor.");
+    } else if ((flavor === "vanilla" || flavor === "chocolate") && (toppings === "sprinkles" || toppings === "peanuts")) {
+        console.log("Please try ordering again using either a cone or bowl vessel.");
+    } else if ((flavor === "vanilla" || flavor === "chocolate") && (vessel === "cone" || vessel === "bowl")) {
+        console.log("Please try ordering again using either sprinkles or peanuts toppings.");
+    } else {
+        console.log("Invalid order. Please check your flavor, vessel, and toppings.");
+    }
+</script>
+
+</html>

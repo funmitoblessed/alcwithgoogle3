@@ -1,0 +1,45 @@
+/* add your CSS here */
+
+h3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+div.container {
+    width: 320px;
+    /* box-shadow: 5px 5px 4px 2px rgb(210, 212, 213); */
+    box-shadow: 3px 3px 3px 2px #AD0075;
+    background-color: azure;
+    border-style: solid;
+    border-width: .2px;
+    border-color: rgb(210, 212, 213);
+}
+
+div.animalInfo {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: .1px;
+    border-color: rgb(210, 212, 213);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img {
+    margin: 10px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+p.fact {
+    font-style: italic;
+    text-align: justify;
+}
+
+span {
+    font-weight: bold;
+    text-align: center;
+}

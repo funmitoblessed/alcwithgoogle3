@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz: Checking your balance(3-5)</title>
+    <style>
+        code {
+            color: #c7254e;
+            background-color: #f9f2f4;
+            border-radius: 4px;
+            direction: ltr;
+            unicode-bidi: bidi-override;
+        }
+        
+        blockquote {
+            margin: 20px 0;
+            padding: 10px 20px;
+            border-left: 5px solid #dbe2e8;
+        }
+        span {
+            font-family: "Lucida Console", Monaco, Courier, monospace;
+            display: block;
+            padding: 9.5px;
+            font-size: 13px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Directions:</h3>
+    <p>Using the flowchart below, write the code to represent checking your balance at the ATM. The yellow diamonds represent conditional statements and the blue rectangles with rounded corners represent what should be printed to the console.</p>
+    <figure> <img src="12-12.jpeg" style="width: 95%; padding: 2%">
+        <figcaption style="text-align: center; font-weight: bold">Flowchart for checking your balance at the ATM.</figcaption>
+    </figure>
+    <div>
+        <p>Use the following variables in your solution: </p>
+        <ul>
+            <li><code>balance</code> - the account balance </li>
+            <li><code>isActive</code> - if account is active</li>
+            <li><code>checkBalance</code> - if you want to check balance</li>
+        </ul>
+
+        <p> <strong>Hint:</strong> <em> The variable balance could be a value less than, greater than, or equal to 0. The variables <code>isActive</code> and <code>checkBalance</code> are booleans that can be set to true or false.</em>
+            <blockquote> TIP: To print out the account balance with decimal points (i.e. 325.00), use the <code>.toFixed()</code> method and pass it the number of decimal points you want to use. For example, <code>balance.toFixed(2)</code> returns 325.00.</blockquote>
+            <hr>
+            <blockquote>
+                <p>TIP: Make sure to test your code with different values.</p>
+                <p>For example, If <code>checkBalance</code> equals <code>true</code> and <code>isActive</code> equals <code>false</code>, <code>then Your account is no longer active.</code> should be printed to the console.</p>
+            </blockquote>
+    </div>
+
+    <div style="text-align: center">
+        <span style="text-transform: uppercase; font-weight: bold">Solution is in console (<em>Ctrl+Shift+I</em> to open)</span></div>
+
+    <script>
+        /*
+         * Programming Quiz - Checking Your Balance (3-5)
+         */
+
+        // change the values of `balance`, `checkBalance`, and `isActive` to test your code
+        var balance = 0;
+        var checkBalance = true;
+        var isActive = false;
+
+        if (checkBalance) {
+            if (isActive && balance > 0) {
+                console.log("Your balance is $" + balance.toFixed(2) + ".");
+            } else if (isActive && balance < 0) {
+                console.log("Your balance is negative. Please contact bank.");
+            } else if ((!isActive && balance > 0) || (!isActive && balance < 0) || (!isActive && balance === 0)) {
+                console.log("Your account is no longer active.");
+            } else if (balance === 0) {
+                console.log("Your account is empty.");
+            }
+        } else if (!checkBalance) {
+            console.log("Thank you. Have a nice day!");
+        }
+    </script>
+</body>
+
+</html>
+
+</body>
