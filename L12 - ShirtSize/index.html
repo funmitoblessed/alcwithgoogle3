@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz: What do I Wear? (3-7)</title>
+    <style href="style.css" rel="stylesheet">
+        code {
+            color: #c7254e;
+            background-color: #f9f2f4;
+            border-radius: 4px;
+            direction: ltr;
+            unicode-bidi: bidi-override;
+        }
+        
+        blockquote {
+            margin: 20px 0;
+            padding: 10px 20px;
+            border-left: 5px solid #dbe2e8;
+        }
+        
+        span {
+            font-family: "Lucida Console", Monaco, Courier, monospace;
+            display: block;
+            padding: 9.5px;
+            font-size: 13px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        #image {
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div>
+        <figure id="image">
+            <img src="tshirt-guide.png" alt="t-shirt sizes">
+        </figure>
+
+        <h3> Directions: </h3>
+        <p> Use the sizing chart above, create a series of logical expressions that prints the size of a t-shirt based on the measurements of <code>shirtWidth</code>, <code>shirtLength</code>, and <code>shirtSleeve</code>. Valid sizes include <code>S</code>,
+            <code>M</code>, <code>L</code>, <code>XL</code>, <code>2XL</code>, and <code>3XL</code>.</p>
+
+        <p>For example, if...</p>
+
+        <span> var shirtWidth = 23; // size L (large) </br>
+        var shirtLength = 30; // size L (large) </br>
+        var shirtSleeve = 8.71; // size L (large)</span>
+
+        <p>Then print <code>L</code> to the console.</p>
+
+        <strong>Hint</strong>:<em> You will need to compare a range of values when checking for <code>shirtWidth</code>, <code>shirtLength</code>, and <code>shirtSleeve</code>. For example, if the shirt's <strong>width</strong> is at least <strong>20"</strong>, but no more than <strong>22"</strong>, then the t-shirt should be <strong>medium (M)</strong> — as long as the other values for the shirt's <strong>length</strong> and <strong>sleeve</strong> measurements match up.</em>
+        <hr>
+
+        <p> If <code>shirtWidth</code>, <code>shirtLength</code>, and <code>shirtSleeve</code> don't fit within the range of acceptable values for a specific size, then print <code>N/A</code> to the console. For example, if...</p>
+
+        <span>var shirtWidth = 18; // size S (small) </br>
+    var shirtLength = 29; // size M (medium)</br>
+    var shirtSleeve = 8.47; // size M (medium)</span>
+
+        <p>Then print <code>N/A</code> to the console because the measurements don't all match up with one particular size.</p>
+
+        <blockquote>
+            <strong>TIP</strong>: Make sure to test your code with different values. For example,</p>
+            If <code>shirtWidth</code> equals <code>19</code>, <code>shirtLength</code> equals <code>28</code> and <code>shirtSleeve</code> equals <code>8.21</code>, then <code>S</code> should be printed to the console. </br>
+            If <code>shirtWidth</code> equals <code>26</code>, <code>shirtLength</code> equals <code>33</code> and <code>shirtSleeve</code> equals <code>9.63</code>, then <code>2XL</code> should be printed to the console. </br>
+            If <code>shirtWidth</code> equals <code>18</code>, <code>shirtLength</code> equals <code>29</code> and <code>shirtSleeve</code> equals <code>8.47</code>, then <code>N/A</code> should be printed to the console.</blockquote>
+
+        <div style="text-align: center">
+            <span style="text-transform: uppercase; font-weight: bold">Solution is in console (<em>Ctrl+Shift+I</em> to open)</span></div>
+
+    </div>
+
+</body>
+
+</html>
