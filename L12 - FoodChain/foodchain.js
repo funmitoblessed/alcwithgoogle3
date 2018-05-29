@@ -32,9 +32,27 @@ If eatsPlants equals true and eatsAnimals equals false, then herbivore should be
  */
 
 // change the values of `eatsPlants` and `eatsAnimals` to test your code
-var eatsPlants = false;
-var eatsAnimals = true;
+var eatsPlants = true;
+var eatsAnimals = false;
 
-var category = /* your code goes here */
+/* your code goes here */
 
-    console.log(category);
+var category = eatsPlants ? (eatsAnimals ? "omnivore" : "herbivore") : (eatsAnimals ? "carnivore" : undefined);
+
+console.log(category);
+
+
+/*
+
+// using normal if...else statements (Works fine too)
+
+if (eatsAnimals && eatsPlants) {
+    console.log("omnivore");
+} else if (eatsPlants) {
+    console.log("herbivore");
+} else if (eatsAnimals) {
+    console.log("carnivore");
+} else {
+    console.log(undefined);
+}
+*/
