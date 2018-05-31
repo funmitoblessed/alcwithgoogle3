@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lesson 13-6 Quiz: Countdown, Liftoff! (4-3)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="script.js"></script>
+    <style>
+        code {
+            color: #c7254e;
+            background-color: #f9f2f4;
+            border-radius: 4px;
+            direction: ltr;
+            unicode-bidi: bidi-override;
+        }
+        
+        blockquote {
+            margin: 20px 0;
+            padding: 10px 20px;
+            border-left: 5px solid #dbe2e8;
+        }
+        
+        span {
+            font-family: "Lucida Console", Monaco, Courier, monospace;
+            display: block;
+            padding: 9.5px;
+            font-size: 13px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>NASA's countdown to launch
+        <a href="http://www.nasa.gov/mission_pages/shuttle/launch/countdown101.html" target="_blank">includes checkpoints</a> where NASA engineers complete certain technical tasks. During the final minute, NASA has 6 tasks to complete:</p>
+
+    <ul>
+        <li>Orbiter transfers from ground to internal power (T-50 seconds)</li>
+        <li>Ground launch sequencer is go for auto sequence start (T-31 seconds)</li>
+        <li>Activate launch pad sound suppression system (T-16 seconds)</li>
+        <li>Activate main engine hydrogen burnoff system (T-10 seconds)</li>
+        <li>Main engine start (T-6 seconds)</li>
+        <li>Solid rocket booster ignition and liftoff! (T-0 seconds)</li>
+    </ul>
+
+    <blockquote>
+        <strong>NOTE:</strong> "T-50 seconds" read as "T-minus 50 seconds".</blockquote>
+
+    <h3>Directions:</h3>
+    Write a <code>while</code> loop that counts down from 60 seconds and:
+
+    <ul>
+        <li>If there's a task being completed, it prints out the task</li>
+        <li>If there is no task being completed, it prints out the time as <code>T-x seconds</code></li>
+    </ul>
+    <p>Use the task and time descriptions described above.</p>
+
+    <h3>Your Code:</h3>
+    <p>Your output should look like the following:</p>
+    <span>
+        T-60 seconds
+        <br> T-59 seconds
+        <br> T-58 seconds
+        <br> ...
+        <br> T-51 seconds
+        <br> Orbiter transfers from ground to internal power
+        <br> T-49 seconds
+        <br> ...
+        <br> T-3 seconds
+        <br> T-2 seconds
+        <br> T-1 seconds
+        <br> Solid rocket booster ignition and liftoff!
+        <br>
+    </span>
+    <br>
+
+    <div style="text-align: center">
+        <span style="text-transform: uppercase; font-weight: bold">Solution is in console (
+            <em>Ctrl+Shift+I</em> to open)</span>
+    </div>
+
+</body>
+
+</html>
