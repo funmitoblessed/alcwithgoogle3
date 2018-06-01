@@ -25,7 +25,7 @@ while (T >= 0) {
         console.log("T-" + T + " seconds");
     }
     if (T === 16) {
-        console.log("Activate launch pad sound suppression system")
+        console.log("Activate launch pad sound suppression system");
     }
     if (T > 10 && T < 16) {
         console.log("T-" + T + " seconds");
@@ -37,7 +37,7 @@ while (T >= 0) {
         console.log("T-" + T + " seconds");
     }
     if (T === 6) {
-        console.log("Main engine start")
+        console.log("Main engine start");
     }
     if (T > 1 && T < 6) {
         console.log("T-" + T + " seconds");
