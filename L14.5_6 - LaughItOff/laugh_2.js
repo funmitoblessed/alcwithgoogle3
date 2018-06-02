@@ -12,6 +12,8 @@ Prints: "hahaha!"
 
 */
 
+
+// SOLUTION
 /*
  * Programming Quiz: Laugh it Off 2 (5-2)
  *
