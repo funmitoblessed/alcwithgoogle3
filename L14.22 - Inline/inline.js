@@ -1,4 +1,3 @@
-
 /*
 Directions:
 Call the emotions() function so that it prints the output you see below, 
@@ -24,3 +23,4 @@ function emotions(myString, myFunc) {
 // your code goes here
 // call the emotions function here and pass in an
 // inline function expression
+emotions("happy", function laugh(num) { var output = ""; for (var i = 0; i < num; i++) { output += "ha"; } return output + "!"; });
