@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lesson 14-16 Quiz: Build a Triangle (5-3)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            code {
+                color: #c7254e;
+                background-color: #f9f2f4;
+                border-radius: 4px;
+                direction: ltr;
+                unicode-bidi: bidi-override;
+            }
+            
+            blockquote {
+                margin: 20px 0;
+                padding: 10px 20px;
+                border-left: 5px solid #dbe2e8;
+            }
+            
+            span {
+                font-family: "Lucida Console", Monaco, Courier, monospace;
+                display: block;
+                padding: 9.5px;
+                font-size: 13px;
+                line-height: 1.42857143;
+                color: #333;
+                background-color: #f5f5f5;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }   
+
+            fn {
+                color: brown;
+            }
+
+            ch {
+                color: #c7254e;
+            }
+        </style>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        
+        <h3>Directions:</h3>
+
+        <p>For this quiz, you're going to create a function called <code>buildTriangle()</code> that will accept an input (the triangle at its widest width) and will return the string representation of a triangle. See the example output below.</p>
+
+        <span>buildTriangle(10);</span>
+
+        <blockquote>
+            <h3>Returns:</h3>
+            <span>
+                     *
+                <br> * *
+                <br> * * *
+                <br> * * * *
+                <br> * * * * *
+                <br> * * * * * *
+                <br> * * * * * * *
+                <br> * * * * * * * *
+                <br> * * * * * * * * *
+                <br> * * * * * * * * * *
+            </span>
+        </blockquote>
+
+        <p>We've given you one function <code>makeLine()</code> to start with. The function takes in a line length, and builds a line of asterisks and returns the line with a newline character.</p>
+
+        <span>
+            function <fn>makeLine</fn>(length) { <br>
+            var line = <ch>""</ch>; <br>
+            for (var j = 1; j <= length; j++) { <br>
+                line += <ch>"* "</ch> <br>
+            } <br>
+            return line + <ch>"\n"</ch>; <br>
+            } <br>
+        </span>
+
+        <p>You will need to call this <code>makeLine()</code> function in <code>buildTriangle()</code>.</p>
+
+        <p>This will be the most complicated program you've written yet, so take some time thinking through the problem before diving into the code. What tools will you need from your JavaScript tool belt? Professionals plan out their code before writing anything. Think through the steps your code will need to take and write them down in order. Then go through your list and convert each step into actual code. Good luck!</p>
+
+        <div style="text-align: center">
+            <span style="text-transform: uppercase; font-weight: bold">Solution is in console (<em>Ctrl+Shift+I</em> to open)</span>
+        </div>
+
+    </body>
+
+</html>
