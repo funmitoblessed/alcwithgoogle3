@@ -17,6 +17,6 @@ Returns: boohoo!
 
 // your code goes here
 var cry = function wannaCry() {
-    return "boohoo";
-}
-cry();
+    return "boohoo!";
+};
+console.log(cry());

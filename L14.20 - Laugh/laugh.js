@@ -20,5 +20,5 @@ var laugh = function(num) { //anonymous function
         output += "ha";
     }
     return output + "!";
-}
+};
 laugh(6);

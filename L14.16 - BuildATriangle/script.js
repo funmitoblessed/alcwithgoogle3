@@ -18,7 +18,7 @@ function buildTriangle(length) {
     for (var i = 1; i < length; i++) {
         console.log(makeLine(i));
     }
-    return makeLine(i);
+    return makeLine(i) + "\n";
 }
 
 // test your code by uncommenting the following line
