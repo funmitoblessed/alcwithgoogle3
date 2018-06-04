@@ -14,11 +14,12 @@ function makeLine(length) {
 
 // your code goes here.  Make sure you call makeLine() in your own code.
 
-function buildTriangle(length) {
-    for (var i = 1; i < length; i++) {
-        console.log(makeLine(i));
+function buildTriangle(num) {
+    var trn = "";
+    for (var i = 1; i <= num; i++) {
+        trn = trn + makeLine(i);
     }
-    return makeLine(i) + "\n";
+    return trn;
 }
 
 // test your code by uncommenting the following line
