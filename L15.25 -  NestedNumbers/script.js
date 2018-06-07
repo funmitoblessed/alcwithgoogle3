@@ -44,3 +44,7 @@ var numbers = [
 ];
 
 // your code goes here
+
+for (var i = 0; i < numbers.length; i++) {
+
+}
