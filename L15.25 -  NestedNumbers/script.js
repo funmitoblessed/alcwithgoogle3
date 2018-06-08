@@ -1,11 +1,12 @@
 /*
+ * 
  * Lesson 15-22 Quiz: I Got Bills
- 
+ * 
  * Directions:
  * 
  * Use a nested for loop to take the numbers array below and replace all of the values 
  * that are divisible by 2 (even numbers) with the string "even" and all other numbers with the string "odd".
-
+ * 
  * var numbers = [
  *     [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
  *     [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],
@@ -18,9 +19,10 @@
  *     [67, 6, 53, 537, 2, 168, 16, 2, 1, 8],
  *     [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
  * ];
- 
+ * 
  */
 
+// SOLUTION
 /*
  * Programming Quiz: Nested Numbers (6-10)
  *
