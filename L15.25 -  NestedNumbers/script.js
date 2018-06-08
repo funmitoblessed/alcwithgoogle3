@@ -53,5 +53,5 @@ for (var row = 0; row < numbers.length; row++) {
             numbers[row][col] = "odd";
         }
     }
-};
+}
 console.log(numbers);
