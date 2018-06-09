@@ -42,6 +42,8 @@ var savingsAccount = {
         }
     },
     printAccountSummary: function() {
-        console.log("Welcome!" + "\n" + "Your balance is currently $" + this.balance + " and your interest rate is " + this.interestRatePercent + "%.");
+        return ("Welcome!" + "\n" + "Your balance is currently $" + this.balance + " and your interest rate is " + this.interestRatePercent + "%.");
     }
 };
+
+console.log(savingsAccount.printAccountSummary());

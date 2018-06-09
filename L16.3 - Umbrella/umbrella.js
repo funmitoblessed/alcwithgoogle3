@@ -43,7 +43,7 @@ var umbrella = {
     // close() method for umbrella Object
     close: function() {
         if (umbrella.isOpen === false) {
-            return "The umbrella is already closed!"
+            return "The umbrella is already closed!";
         } else {
             umbrella.isOpen = false;
             return "Julia closes the umbrella";
