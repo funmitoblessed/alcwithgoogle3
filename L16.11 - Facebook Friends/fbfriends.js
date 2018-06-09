@@ -26,7 +26,7 @@ var facebookProfile = {
         facebookProfile.messages.push(message);
     },
     deleteMessage: function deleteMessage(index) {
-        facebookProfile.messages.splice(index);
+        facebookProfile.messages.splice(index, 1);
     },
     addFriend: function addFriend() {
         facebookProfile.friends += 1;
