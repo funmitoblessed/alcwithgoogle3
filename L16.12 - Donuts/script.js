@@ -31,3 +31,9 @@ var donuts = [
 ];
 
 // your code goes here
+
+donuts.forEach(function(donuts) {
+    // iterate over the properties. No need to use index since it is a forEach loop.
+    var donutCost = donuts.type + " donuts cost $" + donuts.cost + " each";
+    console.log(donutCost);
+});
