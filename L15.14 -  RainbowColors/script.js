@@ -1,4 +1,6 @@
 /*
+* Lesson 15-14 Quiz: Colors of the Rainbow
+*
 * Directions:
 * James was creating an array with the colors of the rainbow, and he forgot some colors. The standard rainbow colors are usually listed in this order:
 

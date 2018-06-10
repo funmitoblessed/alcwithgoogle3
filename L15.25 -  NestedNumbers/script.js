@@ -47,8 +47,8 @@ var numbers = [
 
 // your code goes here
 
-for (var row = 0; row < numbers.length; row++) {
-    for (var col = 0; col < numbers[row].length; col++) {
+for (var row = 0; row < numbers.length; row++) { // iterates over the each row of array and accesses individual array in the larger array
+    for (var col = 0; col < numbers[row].length; col++) { // iterates over the array values in each row of array earlier accessed
         if (numbers[row][col] % 2 === 0) {
             numbers[row][col] = "even";
         } else {

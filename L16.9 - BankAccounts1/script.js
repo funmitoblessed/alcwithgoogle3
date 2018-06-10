@@ -41,6 +41,7 @@ var savingsAccount = {
             savingsAccount.balance -= amount;
         }
     },
+    // printAccountSummary method.
     printAccountSummary: function() {
         return ("Welcome!" + "\n" + "Your balance is currently $" + this.balance + " and your interest rate is " + this.interestRatePercent + "%.");
     }

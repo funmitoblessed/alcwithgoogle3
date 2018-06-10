@@ -22,15 +22,19 @@ var facebookProfile = {
     name: "Funmito",
     friends: 1000,
     messages: ["Good to be here", "I am happy so happy today", "Today is going to be a great day"],
+    // postMessage method. Takes in a message as string and adds to the messages array
     postMessage: function postMessage(message) {
         facebookProfile.messages.push(message);
     },
+    // deleteMessage method. reomves the message corresponding to the provided index
     deleteMessage: function deleteMessage(index) {
         facebookProfile.messages.splice(index, 1);
     },
+    // addFriend method. Increases friend count by 1
     addFriend: function addFriend() {
         facebookProfile.friends += 1;
     },
+    // deleteFriend method. Decreases friend count by 1
     removeFriend: function removeFriend() {
         facebookProfile.friends -= 1;
     }
