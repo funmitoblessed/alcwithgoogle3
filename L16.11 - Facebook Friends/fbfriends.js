@@ -39,3 +39,4 @@ var facebookProfile = {
         facebookProfile.friends -= 1;
     }
 };
+facebookProfile.postMessage("Hello Hello");

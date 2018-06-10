@@ -15,7 +15,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/L14.16 - BuildATriangle/script.js"
+            "program": "${workspaceFolder}/L16.11 - Facebook Friends/fbfriends.js"
         }
     ]
 }
