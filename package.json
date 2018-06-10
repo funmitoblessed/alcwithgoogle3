@@ -1,0 +1,25 @@
+{
+  "name": "alcwithgoogle3",
+  "version": "1.0.0",
+  "description": "Google Africa Challenge Scholarship 2018 Projects",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofunmito/alcwithgoogle3.git"
+  },
+  "author": "Funmito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ofunmito/alcwithgoogle3/issues"
+  },
+  "homepage": "https://github.com/ofunmito/alcwithgoogle3#readme",
+  "keywords": [
+    "alc",
+    "front-end",
+    "web",
+    "google"
+  ]
+}

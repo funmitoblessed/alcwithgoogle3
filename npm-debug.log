@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   '--save-dev',
+1 verbose cli   'eslint-config-google@latest',
+1 verbose cli   'eslint@latest' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData eslint-config-google@latest
+8 silly fetchPackageMetaData eslint@latest
+9 silly fetchNamedPackageData eslint-config-google
+10 silly mapToRegistry name eslint-config-google
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/eslint-config-google
+14 silly fetchNamedPackageData eslint
+15 silly mapToRegistry name eslint
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/eslint
+19 verbose request uri https://registry.npmjs.org/eslint-config-google
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 6:17:37 PM
+22 verbose request id c1f8da12f8ab3355
+23 http request GET https://registry.npmjs.org/eslint-config-google
+24 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+25 verbose request uri https://registry.npmjs.org/eslint
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 6:17:37 PM
+28 verbose etag W/"bb74219ccb580d306b9759120d4c6771"
+29 verbose lastModified Mon, 28 May 2018 16:02:55 GMT
+30 http request GET https://registry.npmjs.org/eslint
+31 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+32 info attempt registry request try #2 at 6:17:47 PM
+33 http request GET https://registry.npmjs.org/eslint-config-google
+34 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+35 info attempt registry request try #2 at 6:17:47 PM
+36 verbose etag W/"bb74219ccb580d306b9759120d4c6771"
+37 verbose lastModified Mon, 28 May 2018 16:02:55 GMT
+38 http request GET https://registry.npmjs.org/eslint
+39 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+40 info attempt registry request try #3 at 6:18:47 PM
+41 http request GET https://registry.npmjs.org/eslint-config-google
+42 silly fetchPackageMetaData Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+42 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:870:11)
+42 silly fetchPackageMetaData     at errnoException (dns.js:31:15)
+42 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:77:26)
+42 silly fetchPackageMetaData  error for eslint-config-google@latest { [Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443]
+42 silly fetchPackageMetaData   code: 'EAI_AGAIN',
+42 silly fetchPackageMetaData   errno: 'EAI_AGAIN',
+42 silly fetchPackageMetaData   syscall: 'getaddrinfo',
+42 silly fetchPackageMetaData   hostname: 'registry.npmjs.org',
+42 silly fetchPackageMetaData   host: 'registry.npmjs.org',
+42 silly fetchPackageMetaData   port: 443 }
+43 info attempt registry request try #3 at 6:18:47 PM
+44 verbose etag W/"bb74219ccb580d306b9759120d4c6771"
+45 verbose lastModified Mon, 28 May 2018 16:02:55 GMT
+46 http request GET https://registry.npmjs.org/eslint
+47 silly get cb [ 304, undefined ]
+48 verbose etag https://registry.npmjs.org/eslint from cache
+49 verbose get saving eslint to /home/blessed/.npm/registry.npmjs.org/eslint/.cache.json
+50 silly rollbackFailedOptional Starting
+51 silly rollbackFailedOptional Finishing
+52 silly runTopLevelLifecycles Starting
+53 silly runTopLevelLifecycles Finishing
+54 silly install printInstalled
+55 verbose stack Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+55 verbose stack     at Object.exports._errnoException (util.js:870:11)
+55 verbose stack     at errnoException (dns.js:31:15)
+55 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:77:26)
+56 verbose cwd /media/blessed/DATA/Documents/Courses/Google Africa Challenge Scholarship 2018/projects/alcwithgoogle3
+57 error Linux 4.13.0-43-generic
+58 error argv "/usr/bin/nodejs" "/usr/bin/npm" "i" "--save-dev" "eslint-config-google@latest" "eslint@latest"
+59 error node v4.2.6
+60 error npm  v3.5.2
+61 error code EAI_AGAIN
+62 error errno EAI_AGAIN
+63 error syscall getaddrinfo
+64 error getaddrinfo EAI_AGAIN registry.npmjs.org:443
+65 error If you need help, you may report this error at:
+65 error     <https://github.com/npm/npm/issues>
+66 verbose exit [ 1, true ]
