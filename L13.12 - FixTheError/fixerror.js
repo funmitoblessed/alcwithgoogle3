@@ -1,12 +1,15 @@
 /*
-Directions:
-Here is a for loop that's supposed to print the numbers 5 through 9. Fix the error!
+ * Lesson 13-12 Quiz: Fix the Erroe (4-5)
+ * Directions:
+ * Here is a for loop that's supposed to print the numbers 5 through 9. Fix the error!
+ * 
+ * for (x < 10; x++) {
+ *   console.log(x);
+ * }
+ * */
 
-for (x < 10; x++) {
-  console.log(x);
-}
-*/
 
+// SOLUTIOM
 /*
  * Programming Quiz: Fix the Error 1 (4-5)
  */
