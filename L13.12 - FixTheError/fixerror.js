@@ -1,5 +1,5 @@
 /*
- * Lesson 13-12 Quiz: Fix the Erroe (4-5)
+ * Lesson 13-12 Quiz: Fix the Error (4-5)
  * Directions:
  * Here is a for loop that's supposed to print the numbers 5 through 9. Fix the error!
  * 
