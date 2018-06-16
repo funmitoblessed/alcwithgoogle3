@@ -40,4 +40,4 @@ article3.toggleClass('featured');
 var navList;
 // your code goes here!
 // MY SOLUTION
-navList = $('li a').first().attr('#1');
+navList = $('li a').first().attr('href', '#1');
