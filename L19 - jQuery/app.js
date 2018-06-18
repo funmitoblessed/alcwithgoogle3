@@ -41,3 +41,9 @@ var navList;
 // your code goes here!
 // MY SOLUTION
 navList = $('li a').first().attr('href', '#1');
+// Cameron's Solution
+var navList, firstItem, link;
+navList = $('.nav-list');
+firstItem = navList.children().first();
+link = firstItem.find('a');
+link.attr('href', '#1');
