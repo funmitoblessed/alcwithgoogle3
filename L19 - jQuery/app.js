@@ -47,3 +47,18 @@ navList = $('.nav-list');
 firstItem = navList.children().first();
 link = firstItem.find('a');
 link.attr('href', '#1');
+
+
+/*
+ * Lesson 19.5 Quiz: Modifying CSS
+ *  For this quiz, change the font-size of all the article-items to 20px!
+ * You must use jQuery's css() method!
+ */
+// Start with this variable!
+var articleItems;
+// your code goes here!
+// MY SOLUTION
+articleItems = $('li.article-item').css('font-size', '20px');
+// Cameron's Solution
+articleItems = $('.article-item');
+articleItems.css('font-size', '20px');
