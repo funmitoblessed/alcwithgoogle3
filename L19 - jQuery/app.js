@@ -74,6 +74,6 @@ $('#input').on('change', function() {
         var val;
         // Your code goes here!
         val = $('div.articles input').val('Learning jQuery with Udacity!');
-        $('div.articles h1').text(val);
+        $('div.articles h1').val(val);
     })
     .on();
