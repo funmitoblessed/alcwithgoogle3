@@ -71,9 +71,9 @@ articleItems.css('font-size', '20px');
  * For more on events, check the instructor notes.
  */
 $('#input').on('change', function() {
-        var val;
-        // Your code goes here!
-        val = $('div.articles input').val('Learning jQuery with Udacity!');
-        $('div.articles h1').val(val);
-    })
-    .on();
+    var val, h1;
+    // Your code goes here!
+    val = $('#input').val();
+    h1 = $('.articles').children('h1');
+    h1.text(val);
+});
