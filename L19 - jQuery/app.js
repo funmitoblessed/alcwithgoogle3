@@ -77,3 +77,16 @@ $('#input').on('change', function() {
     h1 = $('.articles').children('h1');
     h1.text(val);
 });
+
+
+/*
+ * Lesson 19.8 Quiz: Removing DOM Elements
+ * For this quiz, remove the <ul> from the first article item!
+ * You must use jQuery's remove() method.
+ */
+
+// Start with this variable!
+var articleItems;
+// your code goes here!
+// MY SOLUTION
+articleItems = $('ul.article-list li ul').remove();
