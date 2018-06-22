@@ -16,4 +16,24 @@ familyTwoChild = $('#family2').append('<div id = "bruce"><h2>Bruce</h2></div>');
 familyTwoGrandChild = $('#bruce').append('<div id = "madison"><h3>Madison</h3></div>');
 // create a sibling for the 'div#madison' element
 familyTwoGrandChild.append('<div id = "hunter"><h3>Hunter</h3></div>');
+
 // Cameron's Solution
+var family1, family2, bruce, madison, hunter;
+
+family1 = $('#family1');
+
+family2 = $('<div id = "family2"><h1>Family2<h1></div>');
+
+bruce = $('<div id = "bruce"><h2>Bruce</h2></div>');
+
+madison = $('<div id = "madison"><h3>Madison</h3></div>');
+
+hunter = $('<div id = "hunter"><h3>Hunter</h3></div>');
+
+family1.insertAfter(family1);
+
+family2.append(bruce);
+
+bruce.append(madison);
+
+bruce.append(hunter);
