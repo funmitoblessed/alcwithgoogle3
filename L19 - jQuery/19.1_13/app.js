@@ -89,3 +89,28 @@ var articleItems;
 // your code goes here!
 // MY SOLUTION
 articleItems = $('ul.article-list li ul').remove();
+// Cameron's Soluntion
+var articleItems, ul;
+articleItems = $('.article-item');
+ul = articleItems.find('ul');
+ul.remove();
+
+
+/*
+ * Lesson 19.12 Quiz: Iterating with Each
+ * For this quiz, use jQuery's each() method to iterate through the <p>s,
+ * calculate the length of each one, and add each length to the end of each <p>
+ * Also, make sure you don't change the text inside each <p> except to add the length, otherwise your
+ * length numbers won't be correct!
+ */
+// Your code goes here!
+$("p").each(function(i) {
+    var para = $(this).text()
+    var paraLength = $(this).text().length;
+    var newParagraph = para + paraLength;
+    console.log(newParagraph)
+});
+
+$("p").each(function(i) {
+    $(this).text() = $(this).text() + $(this).text().length;
+});
