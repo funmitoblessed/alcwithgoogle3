@@ -104,13 +104,16 @@ ul.remove();
  * length numbers won't be correct!
  */
 // Your code goes here!
-$("p").each(function(i) {
-    var para = $(this).text()
-    var paraLength = $(this).text().length;
-    var newParagraph = para + paraLength;
-    console.log(newParagraph)
+$("p").each(function(index, element) {
+    var paragraph = $(this).text()
+    var paraLength = paragraph.length;
+    $(this).text(paragraph + "" + paraLength);
 });
-
-$("p").each(function(i) {
-    $(this).text() = $(this).text() + $(this).text().length;
-});
+// Cameron's Solution (didn't work when I tried)
+function numberAdder() {
+    var text, number;
+    text = $(this).text;
+    number = text.length;
+    $(this).text(text + " " + number);
+}
+$('p').each(numberAdder);
