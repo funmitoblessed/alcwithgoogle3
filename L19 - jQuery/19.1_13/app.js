@@ -1,4 +1,5 @@
 $(function() {
+
     /*
      * Lesson 19.2 Quiz: you.toggleClass
      * For this quiz, use a jQuery class selector and featuredArticle variable to toggle the 'featured' class!
@@ -8,7 +9,8 @@ $(function() {
     // your code starts here!
     // MY SOLUTION
     featuredArticle = $("li.article-item").toggleClass("featured"); // selects the 'list' item with class 'article-item' and toggles the class 'featured'
-    // Cameron's  Solution
+
+    // CAMERON'S SOLUTION
     /*
     var featured;
     featured = $('.featured');
@@ -27,7 +29,8 @@ $(function() {
     // MY SOLUTION
     article2 = $('.featured').toggleClass('featured'); // finds the element with the 'featured' class and toggles the class
     article3 = article2.next().toggleClass('featured'); // finds the next sibling of the article2 element and then toggles the 'featured' class
-    // Cameron's Solution 
+
+    // CAMERON'S SOLUTION 
     /*
     article2 = $('.featured');
     article3 = article2.next();
@@ -46,7 +49,8 @@ $(function() {
     // your code goes here!
     // MY SOLUTION
     navList = $('li a').first().attr('href', '#1');
-    // Cameron's Solution
+
+    // CAMERON'S SOLUTION
     /*
     var navList, firstItem, link;
     navList = $('.nav-list');
@@ -66,7 +70,8 @@ $(function() {
     // your code goes here!
     // MY SOLUTION
     articleItems = $('li.article-item').css('font-size', '20px');
-    // Cameron's Solution
+
+    // CAMERON'S SOLUTION
     /*
     articleItems = $('.article-item');
     articleItems.css('font-size', '20px');
@@ -98,7 +103,9 @@ $(function() {
     // your code goes here!
     // MY SOLUTION
     articleItems = $('ul.article-list li ul').remove();
-    // Cameron's Soluntion
+
+    // CAMERON'S SOLUTION
+
     /*
     var articleItems, ul;
     articleItems = $('.article-item');
@@ -120,7 +127,8 @@ $(function() {
         var paraLength = paragraph.length;
         $(this).text(paragraph + "" + paraLength);
     });
-    // Cameron's Solution (didn't work when I tried)
+
+    // CAMERON'S SOLUTION (didn't work when I tried)
     /*
     function numberAdder() {
         var text, number;

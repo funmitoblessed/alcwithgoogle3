@@ -1,4 +1,5 @@
 $(function() {
+
     /*
      * Lesson 19.11 Quiz: Build a DOM (Family) Tree!
      * For this quiz, you'll need to add to the DOM tree that already exists.
@@ -6,6 +7,7 @@ $(function() {
      * of '#family2'. '#bruce' should have two <div>s as children, '#madison' and '#hunter'.
      */
     // Your code goes here!
+    // MY SOLUTION
     var familyOne, familyTwo, familyTwoChild, familyTwoGrandChild;
     // select the div with the 'family1' id and assign to variable
     familyOne = $('#family1');
@@ -18,7 +20,7 @@ $(function() {
     // create a sibling for the 'div#madison' element
     familyTwoGrandChild.append('<div id = "hunter"><h3>Hunter</h3></div>');
 
-    // Cameron's Solution
+    // CAMERON'S SOLUTION
     /*
     var family1, family2, bruce, madison, hunter;
 
