@@ -7,8 +7,10 @@
  *      a. remove the #my-button element from the DOM
  *      b. add the `success` class to the body
  */
+$(function() {
+    $('#my-button').on('click', function() {
+        $('#my-button').remove();
+        $('body').toggleClass('success');
+    });
 
-$('#my-button').on('click', function() {
-    $('#my-button').remove();
-    $('body').toggleClass('success');
 });
